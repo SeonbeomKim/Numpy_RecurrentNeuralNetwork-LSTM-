@@ -1,0 +1,2 @@
+# Numpy_RecurrentNeuralNetwork
+Numpy_RecurrentNeuralNetwork
