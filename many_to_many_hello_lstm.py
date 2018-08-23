@@ -19,7 +19,7 @@ model.add(nn.affine(out_dim=4, w_init=init.xavier)) #[N*output_num, 4]
 
 model.add_loss(nn.softmax_cross_entropy_with_logits())
 
-x = np.array([[[1,0,0,0], [0,1,0,0], [0,0,1,0], [0,0,1,0]]]) # 'h', 'e', 'l', 'o' #[1, 4, 4]
+x = np.array([[[1,0,0,0], [0,1,0,0], [0,0,1,0], [0,0,1,0]]]) # 'h', 'e', 'l', 'l' #[1, 4, 4]
 y = np.array([[0,1,0,0], [0,0,1,0], [0,0,1,0], [0,0,0,1]]) # 'e', 'l', 'l', 'o' #[4, 4]
 
 for epoch in range(1, 50):
